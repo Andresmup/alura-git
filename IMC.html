@@ -1,0 +1,55 @@
+<meta charset='UTF-8'>
+<h1>Calcular IMC</h1>
+
+
+
+<script>
+function imprimir(mensaje){
+	document.write(mensaje);
+	saltarlinea();
+}
+
+function saltarlinea(){
+	document.write("<br>");
+}
+
+function saltar3linea(){
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+}
+
+
+function calculardorIMC(nombre){
+	var peso = prompt("Ingrese el peso de " + nombre);
+	var altura = prompt("Ingrese la altura de " + nombre);
+	var IMC = peso/(altura *altura)
+	return IMC;
+}
+
+function promediar(valor1,valor2){
+	var promedio = (valor1 + valor2)/2
+	return promedio;
+}
+
+var nombre1 = prompt("Ingrese su nombre")
+var IMC1 = calculardorIMC(nombre1)
+imprimir("El IMC de " + nombre1 + " es " + IMC1);
+var nombre2 = prompt("Ingrese su nombre")
+var IMC2 = calculardorIMC(nombre2)
+imprimir("El IMC de " + nombre2 + " es " + IMC2);
+imprimir("El promedio de IMC es " + promediar(IMC1,IMC2));
+
+
+
+if(IMC1 < 18.5){
+imprimir(nombre1 + "tiene insuficiencia")
+}else if (IMC1 >= 18.5 && IMC1 < 25){
+imprimir(nombre1 + " tiene un valor normal")
+}else if (IMC1 >= 25 && IMC1 < 30){
+imprimir(nombre1 + " tiene sobrepeso")
+}else if (IMC1 > 40){
+imprimir(nombre1 + " tiene obesidadSS")
+}
+
+</script>

@@ -1,0 +1,24 @@
+<meta charset='UTF-8'>
+<h1>Diferencia de edades </h1>
+
+<script>
+function diferenciaedades(edad1,edad2){
+	return edad1 - edad2;
+}
+function imprimir(mensaje){
+	document.write(mensaje);
+	saltarlinea();
+}
+
+function saltarlinea(){
+	document.write("<br>");
+}
+
+var edadAndres = 24;
+var edadSergio = 40;
+
+imprimir("Mi edad es " + edadAndres + " la de mi hermano es " + edadSergio + " y la diferencia es " + "<big>" + diferenciaedades(edadAndres,edadSergio) + "</big>");
+document.write("<hr>");
+imprimir("Adios");
+
+</script>

@@ -1,0 +1,37 @@
+<meta charset='UTF-8'>
+<h1>Tabla multiplicar</h1>
+
+<script>
+function imprimir(mensaje){
+	document.write(mensaje);
+	saltarlinea();
+}
+
+function saltarlinea(){
+	document.write("<br>");
+}
+
+function saltar3linea(){
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+}
+
+
+var numeroBase = parseInt(prompt("Ingrese numero base"));
+var numeroFinalizar = parseInt(prompt("Ingrese numero final"));
+var contador = 0;
+
+while(contador < (numeroFinalizar+1)){
+	imprimir(numeroBase + " por " + contador + " = " + contador*numeroBase)
+	contador = contador + 1;
+
+}
+
+saltar3linea();
+contador = 0;
+for(contador;contador < (numeroFinalizar+1);contador ++){
+	imprimir(numeroBase + " por " + contador + " = " + contador*numeroBase)
+}
+
+</script>

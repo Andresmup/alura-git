@@ -1,0 +1,40 @@
+<meta charset='UTF-8'>
+<h1>Futbol</h1>
+
+
+
+<script>
+function imprimir(mensaje){
+	document.write(mensaje);
+	saltarlinea();
+}
+
+function saltarlinea(){
+	document.write("<br>");
+}
+
+function saltar3linea(){
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+}
+
+
+var victorias = parseInt(prompt("Cantidad de victorias"));
+var empates = parseInt(prompt("Cantidad de empates"));
+var puntosPasado = parseInt(prompt("Puntos año pasado"));
+var puntos = victorias*3 + empates
+
+
+imprimir("La cantidad de puntos son " + puntos);
+
+
+if (puntos > puntosPasado){
+imprimir("El equipo hizo mas puntos este año");
+} else if(puntos == puntosPasado) {
+imprimir("El equipo hizo igual de puntos este año");
+} else if(puntos < puntosPasado){
+imprimir("El equipo hizo menos puntos este año");
+}
+
+</script>

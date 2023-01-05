@@ -1,0 +1,39 @@
+<meta charset='UTF-8'>
+<h1>Juego adivinación</h1>
+
+<script>
+function imprimir(mensaje){
+	document.write(mensaje);
+	saltarlinea();
+}
+
+function saltarlinea(){
+	document.write("<br>");
+}
+
+function saltar3linea(){
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+}
+
+
+var numeroRandom = Math.round(Math.random()*10);
+var intento = 1;
+var numeroUuario = parseInt(prompt("Ingrese un numero del 1 al 10"));
+
+
+while(intento <3){
+
+	if(numeroRandom == numeroUuario){
+		alert("Usted acerto");
+		break;
+	}else if (numeroRandom != numeroUuario){
+		alert("Numero equivocado, intente de nuevo, te quedan " + (3-intento) + " intentos")
+		numeroUuario = parseInt(prompt("Ingrese un numero del 1 al 10"));
+	}
+	intento++
+
+	
+}
+</script>

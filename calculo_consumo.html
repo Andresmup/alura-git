@@ -1,0 +1,28 @@
+<meta charset='UTF-8'>
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<script>
+function saltarlinea(){
+	document.write("<br>");
+}
+
+function imprimir(texto){
+	document.write(texto);
+	saltarlinea();
+}
+
+var saltolinea = "<br><br><br>";
+var cantidadKilometros = 480;
+var capacidadTanque = 40;
+var eficiencia = cantidadKilometros/capacidadTanque;
+
+imprimir("Hola amigos");
+document.write("La eficiencia es: " + eficiencia + " usando combustible");
+saltarlinea();
+cantidadKilometros = 300;
+eficiencia = cantidadKilometros/capacidadTanque
+document.write("La eficiencia es: " + eficiencia + " usando alcohol");
+document.write(saltolinea);
+imprimir("Adios");
+</script>
